@@ -22,7 +22,7 @@ Curried0p<Ret> bind(Ret f()) {
 	return Curried0p<Ret>(f);
 }
 
-// Curried forme of a 0 arg method (much more usefull :)
+// Curried forme of a 0 arg method (more usefull :)
 template <typename Ret, class C>
 class Curried0o
 {
@@ -80,7 +80,7 @@ int main () {
 	cur();
 	assertStr("f0");
 	o0 obj;
-	// Here I got too lasy to write to type :/
+	// Here I got too lasy to write the type :/
 	auto myHi(bind(&o0::hi, obj));
 	myHi();
 	assertStr("hi");
